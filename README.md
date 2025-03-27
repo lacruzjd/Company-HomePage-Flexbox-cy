@@ -12,7 +12,6 @@ En este proyecto, usarás Flexbox para diseñar y crear el diseño de la página
    - Una declaración de misión o una breve descripción de la empresa.
    - Una lista o conjunto de imágenes y títulos que representan el producto o productos de la empresa.
    - Una sección que describe algunos de los empleados o compañeros de equipo de la empresa.
-   - Si quieres, puedes visitar nuestro sitio de ejemplo para inspirarte o ver cómo usamos flexbox.
 
 2. Tu proyecto debería usar el estilo Flexbox para el diseño. Intenta aprovechar las ventajas de Flexbox, como su fácil posicionamiento horizontal y vertical, la flexibilidad en el flujo de elementos al cambiar el tamaño de la página y un estilo excelente para elementos repetidos.
 

@@ -1,0 +1,245 @@
+:root {
+    --color-principal: rgb(178, 245, 54);
+    --color-puente-principal: rgb(218, 253, 229);
+    --color-secundario: rgb(252, 255, 57);
+    --color-puente-secundario: rgb(80, 85, 126);
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--color-principal);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+/* logo */
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(to left, var(--color-puente-principal) 0.1px, var(--color-puente-secundario) 20px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-principal);
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+body {
+    position: absolute;
+}
+
+#mision {
+    color: var(--color-puente-secundario);
+    height: 70vh;
+    padding: 20px;
+    background-color: var(--color-puente-principal);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#mision h2 {
+    display: none
+}
+
+#mision strong,
+h2 {
+    line-height: 2rem;
+    letter-spacing: .3rem;
+    word-spacing: .5rem;
+    font-size: 1.5rem;
+}
+
+#productos,
+#equipo,
+#contacto {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 30px;
+}
+
+#productos,
+#contacto {
+    justify-content: flex-start;
+    background-color: var(--color-puente-secundario);
+}
+
+#equipo {
+    justify-content: flex-end;
+}
+
+h2 {
+    margin: 3rem 0 1rem 0;
+    color: aliceblue;
+    flex-basis: 100%;
+
+}
+
+#productos h3 {
+    margin: 3rem 0 1rem 0;
+    font-size: 1.5rem;
+    color: var(--color-puente-secundario)
+}
+
+#productos p {
+
+    color: var(--color-puente-secundario)
+}
+
+.producto,
+.miembro {
+    background-color: var(--color-puente-principal);
+    width: 30vw;
+    margin: 10px 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto img[alt] {
+    display: none;
+}
+
+.producto img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+#equipo {
+    display: flex;
+    background-color: var(--color-puente-principal);
+    color: var(--color-puente-secundario)
+}
+
+.miembro {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-puente-secundario);
+    color: var(--color-puente-principal)
+}
+
+.miembro img {
+    border-radius: 50%;
+    width: 100px;
+
+}
+
+#equipo h2 {
+    color: var(--color-puente-secundario);
+}
+
+#equipo {
+    flex-direction: row;
+}
+
+.miembro h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+#contacto form {
+    margin-top: 20px;
+    color: var(--color-puente-principal);
+}
+
+#contacto form label {
+    margin: 10px 0 0;
+    display: block;
+}
+
+#contacto form input {
+    padding: 8px;
+}
+
+#contacto button {
+    padding: 8px;
+    float: right;
+}
+
+#contacto button:hover {
+    background-color: var(--color-principal);
+
+}
+
+
+footer {
+    background-color: var(--color-puente-principal);
+    padding: 20px;
+    height: 1rem;
+    font-size: .9rem;
+}
+
+@media only screen and (max-width: 500px) {
+
+    #productos,
+    #equipo {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .producto,
+    .miembro {
+        width: 70%;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .logo {
+        display: none
+    }
+
+    header {
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    header li:first-child {
+        display: none;
+    }
+
+    h1 {
+        margin: 0 10px;
+    }
+
+}
