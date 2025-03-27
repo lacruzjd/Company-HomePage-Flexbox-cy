@@ -243,3 +243,16 @@ footer {
     }
 
 }
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        background-color: var(--color-puente-secundario);
+    }
+
+    main {
+        margin: auto;
+        width: 80%;
+    }
+
+}
